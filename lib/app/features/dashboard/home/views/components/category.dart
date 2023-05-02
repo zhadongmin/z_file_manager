@@ -5,7 +5,7 @@ class _Category extends StatelessWidget {
 
   final buttons = [
     CustomeButton(
-      icon: Icons.document_scanner,
+      icon: CustomIcons.doc_text_inv,
       color: Colors.green,
       label: 'docs',
       onPressed: () {},
@@ -23,14 +23,14 @@ class _Category extends StatelessWidget {
       onPressed: () {},
     ),
     CustomeButton(
-      icon: Icons.music_note,
+      icon: CustomIcons.music,
       color: Colors.orangeAccent,
-      label: 'videos',
+      label: 'music',
       onPressed: () {},
     ),
     CustomeButton(
-      icon: CustomIcons.doc_text_inv,
-      color: Colors.green,
+      icon: CustomIcons.music,
+      color: Colors.orangeAccent,
       label: 'music',
       onPressed: () {},
     ),

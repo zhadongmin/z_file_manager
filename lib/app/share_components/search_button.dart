@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../constans/app_constant.dart';
+
 class SearchButton extends StatelessWidget {
   const SearchButton({required this.onPressed, super.key});
 
@@ -16,7 +18,7 @@ class SearchButton extends StatelessWidget {
         iconSize: 15,
         tooltip: "Search",
         padding: EdgeInsets.all(10.0),
-        icon: Icon(Icons.search),
+        icon: Icon(CustomIcons.search),
         onPressed: onPressed,
       ),
     );

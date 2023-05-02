@@ -17,29 +17,42 @@ class FileTypeIcon extends StatelessWidget {
       decoration: BoxDecoration(
           gradient: __gradient(type),
           borderRadius: BorderRadius.circular(size / 5)),
-      child: _icon(type),
+      child: _icon(type, size - 10),
     );
   }
 
-  Widget _icon(FileType type) {
+  Widget _icon(FileType type, double size) {
+    late IconData iconData;
     switch (type) {
       case FileType.msAccess:
-        return Icon(CustomIcons.ms_access);
+        iconData = CustomIcons.ms_access;
+        break;
       case FileType.msExcel:
-        return Icon(CustomIcons.ms_excel);
+        iconData = CustomIcons.ms_excel;
+        break;
       case FileType.msOutlook:
-        return Icon(CustomIcons.ms_outlook);
+        iconData = CustomIcons.ms_outlook;
+        break;
       case FileType.msPowerPoint:
-        return Icon(CustomIcons.ms_power_point);
+        iconData = CustomIcons.ms_power_point;
+        break;
 
       case FileType.msWord:
-        return Icon(CustomIcons.ms_word);
+        iconData = CustomIcons.ms_word;
+        break;
 
       case FileType.other:
-        return Icon(Icons.extension);
+        iconData = Icons.extension;
+        break;
       default:
-        return Icon(Icons.extension);
+        iconData = Icons.extension;
+        break;
     }
+    return Icon(
+      iconData,
+      color: Colors.white,
+      size: size / 2,
+    );
   }
 
   LinearGradient __gradient(FileType type) {

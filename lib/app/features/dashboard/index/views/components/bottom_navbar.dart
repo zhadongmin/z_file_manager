@@ -18,20 +18,20 @@ class _BottomNavbar extends StatelessWidget {
       items: const [
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.home_outlined,
+            CustomIcons.home_outlined,
           ),
           activeIcon: Icon(
-            Icons.home_filled,
+            CustomIcons.home_solid,
           ),
           label: 'home',
           tooltip: 'home',
         ),
         BottomNavigationBarItem(
           icon: Icon(
-            Icons.cloud_circle_outlined,
+            CustomIcons.cloud_outlined,
           ),
           activeIcon: Icon(
-            Icons.cloud_circle_rounded,
+            CustomIcons.cloud_solid,
           ),
           label: 'home',
           tooltip: 'home',
